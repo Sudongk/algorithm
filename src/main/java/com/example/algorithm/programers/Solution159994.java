@@ -1,9 +1,5 @@
 package com.example.algorithm.programers;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Solution159994 {
     // cards1 : ["i", "drink", "water"]
     // cards2 : ["want", "to"]
