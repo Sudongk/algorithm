@@ -25,18 +25,7 @@ public class Solution154540 {
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                for (int k = 0; k < x.length; k++) {
-                    int a = i + x[k];
-                    int b = j + y[k];
-                    if (a >= 0 && a < matrix.length) {
-                        if (b >= 0 && b < matrix[i].length) {
-                            if (!matrix[a][b].equals("X")) {
-                                System.out.println("matrix : " + matrix[a][b]);
-                                matrix[a][b] = "X";
-                            }
-                        }
-                    }
-                }
+                System.out.printf("%d, %d%n", i, j);
             }
         }
 
