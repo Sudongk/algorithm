@@ -23,7 +23,9 @@ public class Solution154540 {
                 }
             }
         }
+
         Collections.sort(list);
+
         return list.isEmpty()?new int[]{-1}:list.stream().mapToInt(Integer::intValue).toArray();
     }
 
@@ -31,7 +33,9 @@ public class Solution154540 {
         if(i<0 || j<0 || i>=visit.length || j>=visit[0].length || visit[i][j] || maps[i].charAt(j)=='X') {
             return 0;
         }
+
         visit[i][j] = true;
+
         return (maps[i].charAt(j)-'0')
                 + getTerritory(i-1,j,visit,maps)
                 + getTerritory(i+1,j,visit,maps)
