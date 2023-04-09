@@ -26,7 +26,7 @@ public class Solution154540 {
 
         Collections.sort(list);
 
-        return list.isEmpty()?new int[]{-1}:list.stream().mapToInt(Integer::intValue).toArray();
+        return list.isEmpty() ? new int[]{-1} : list.stream().mapToInt(Integer::intValue).toArray();
     }
 
     public static int getTerritory(int i, int j, boolean[][] visit, String[] maps) {

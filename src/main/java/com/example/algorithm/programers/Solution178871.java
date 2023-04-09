@@ -14,27 +14,30 @@ public class Solution178871 {
     public static String[] solution(String[] players, String[] callings) {
         int n = players.length;
         String[] answer = new String[n];
-        // 순위
-        Map<String, Integer> rank = new HashMap<>();
 
-        // 기본 순위 할당
-        for(int i = 0; i < n; i++) {
+        // 순위 기록 (key : player, val : index)
+        HashMap<String, Integer> rank = new HashMap<>();
+
+        // 처음 주어진 순위로 초기화
+        for (int i = 0; i < n; i++) {
             rank.put(players[i], i);
         }
 
-        // 순위 변경 호명
-        for(String call : callings) {
-            // prev = 이전 순위, cur = 바뀔 순위
-            int prev = rank.get(call), cur = prev - 1;
-            // curPlayer = 바뀔 순위에 위치해있던 선수
-            String curPlayer = players[cur];
+        for (String call : callings) {
+            // prev = 이전 순위, after = 바뀔 순위
+            int prev = rank.get(call), after = prev - 1;
+            //  = 바뀔 순위에 위치해있던 선수
+            String afterPlayer = players[after];
 
-            // swap 처리
-            players[prev] = curPlayer;
-            players[cur] = call;
-            rank.put(curPlayer, prev);
-            rank.put(call, cur);
+            // SWAP(실시간 변경)
+            players[after] = call;
+            players[prev] = afterPlayer;
+
+            // 기록 변경
+            rank.put(afterPlayer, prev);
+            rank.put(call, after);
         }
+
         // 결과 할당
         for(var entry : rank.entrySet()) {
             answer[entry.getValue()] = entry.getKey();
@@ -52,5 +55,5 @@ public class Solution178871 {
             System.out.println(s);
         }
     }
-
 }
+
