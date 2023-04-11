@@ -26,7 +26,7 @@ public class Solution178871 {
         for (String call : callings) {
             // prev = 이전 순위, after = 바뀔 순위
             int prev = rank.get(call), after = prev - 1;
-            //  = 바뀔 순위에 위치해있던 선수
+            // afterPlayer = 바뀔 순위에 위치해있던 선수
             String afterPlayer = players[after];
 
             // SWAP(실시간 변경)
