@@ -11,12 +11,11 @@ public class Solution155652 {
     public static String solution(String s, String skip, int index) {
         StringBuilder answer = new StringBuilder();
 
-        List<Integer> skipE = new ArrayList<>(skip.length());
-
         for (char letter : s.toCharArray()) {
             char temp = letter;
             int idx = 0;
             while (idx < index) {
+                // temp = z 일때 a로 초기화
                 temp = temp == 'z' ? 'a' : (char) (temp + 1);
                 if (!skip.contains(String.valueOf(temp))) {
                     idx += 1;
@@ -29,7 +28,7 @@ public class Solution155652 {
     }
 
     public static void main(String[] args) {
-        String s = "aukks";
+        String s = "avkks";
         String skip = "wbqd";
         int index = 5;
         System.out.println(solution(s, skip, index));
