@@ -1,7 +1,6 @@
 package com.example.algorithm.programers;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Solution160586 {
     // keymap : ["ABACD", "BCEFD"]
