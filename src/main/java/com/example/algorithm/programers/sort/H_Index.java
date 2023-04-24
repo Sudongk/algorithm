@@ -8,13 +8,18 @@ public class H_Index {
     public int solution(int[] citations) {
         int answer = 0;
 
-        // 0, 1, 3, 5, 6
+        // 배열을 정렬하게 되면 특정 인덱스 i부터 citations 배열 길이 만큼의 논문이 citations[i]번 이상 인용되었다고 할 수 있음
         Arrays.sort(citations);
 
-        Arrays.sort(citations);
-        for(int i=0; i<citations.length; i++){
-            int smaller = Math.min(citations[i], citations.length-i);
-            answer = Math.max(answer, smaller);
+        // i값을 증가시키고 논문의 수를 감소시키면서 비교 했을 때 인용 횟수가 남은 논문의 수 이상(즉, 같움)이 되었을 때의 논문의 수가 H-Index
+        for(int i = 0; i < citations.length; i++) {
+            // 인용된 논문의 수
+            int h = citations.length - i;
+
+            if(citations[i] >= h) {
+                answer = h;
+                break;
+            }
         }
 
         return answer;
