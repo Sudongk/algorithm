@@ -75,6 +75,11 @@ public class TravelRoute {
     }
 
     public static void main(String[] args) {
-
+        String[][] tickets = {{"ICN", "JFK"}, {"HND", "IAD"}, {"JFK", "HND"}};
+        TravelRoute travelRoute = new TravelRoute();
+        String[] solution = travelRoute.solution(tickets);
+        for (String s : solution) {
+            System.out.println(s);
+        }
     }
 }
