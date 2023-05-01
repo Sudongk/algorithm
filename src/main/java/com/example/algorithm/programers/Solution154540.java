@@ -36,7 +36,7 @@ public class Solution154540 {
 
         visit[i][j] = true;
 
-        return (maps[i].charAt(j)-'0')
+        return (maps[i].charAt(j) -'0')
                 + getTerritory(i-1,j,visit,maps)
                 + getTerritory(i+1,j,visit,maps)
                 + getTerritory(i,j-1,visit,maps)
