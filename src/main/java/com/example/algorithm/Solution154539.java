@@ -7,6 +7,7 @@ public class Solution154539 {
         int len = numbers.length;
         int[] answer = new int[len];
 
+        // 시간초과...개선 필요
         for (int i = 0; i < len; i++) {
             if (i == len - 1) {
                 answer[len - 1] = -1;
