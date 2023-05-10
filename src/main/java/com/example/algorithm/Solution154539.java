@@ -1,38 +1,32 @@
 package com.example.algorithm;
 
+import java.util.Stack;
+
 public class Solution154539 {
     // numbers : [2, 3, 3, 5]
     // result : [3, 5, 5, -1]
     public int[] solution(int[] numbers) {
-        int len = numbers.length;
-        int[] answer = new int[len];
+        int[] answer = new int[numbers.length];
+        // 스택 자료구조를 사용한 풀이...
+        Stack<Integer> stack = new Stack<>();
 
-        // 시간초과...개선 필요
-        for (int i = 0; i < len; i++) {
-            if (i == len - 1) {
-                answer[len - 1] = -1;
-                break;
+        for (int i = 0; i < numbers.length; i++) {
+            while (!stack.isEmpty() && numbers[stack.peek()] < numbers[i]) {
+                answer[stack.pop()] = numbers[i];
             }
+            stack.add(i);
+        }
 
-            int curVal = numbers[i];
-
-            for (int j = i + 1; j < numbers.length; j++) {
-                int nextVal = numbers[j];
-
-                if (nextVal > curVal) {
-                    answer[i] = nextVal;
-                    break;
-                }
-
+        for (int i = 0 ; i < answer.length ; i++) {
+            if (answer[i] == 0) {
                 answer[i] = -1;
             }
         }
-
         return answer;
     }
 
     public static void main(String[] args) {
-        int[] numbers = {9, 1, 5, 3, 6, 2};
+        int[] numbers = {2, 3, 3, 5};
         Solution154539 solution154539 = new Solution154539();
         int[] solution = solution154539.solution(numbers);
         for (int s : solution) {
