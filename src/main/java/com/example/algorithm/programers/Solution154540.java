@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * bfs/dfs 개념 이해 필요
+ * */
 public class Solution154540 {
     // maps : ["X591X","X1X5X","X231X", "1XXX1"]
     // result : [1, 1, 27]
@@ -16,8 +19,10 @@ public class Solution154540 {
 
         for(int i=0 ; i<maps.length ; i++) {
             int sum = 0;
+
             for(int j=0 ; j<maps[i].length() ; j++) {
                 sum = getTerritory(i, j, visit, maps);
+
                 if(sum>0) {
                     list.add(sum);
                 }
