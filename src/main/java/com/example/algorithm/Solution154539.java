@@ -2,6 +2,9 @@ package com.example.algorithm;
 
 import java.util.Stack;
 
+/**
+ * 이해 필요
+ * */
 public class Solution154539 {
     // numbers : [2, 3, 3, 5]
     // result : [3, 5, 5, -1]

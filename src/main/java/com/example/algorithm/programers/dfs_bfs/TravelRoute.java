@@ -2,6 +2,9 @@ package com.example.algorithm.programers.dfs_bfs;
 
 import java.util.*;
 
+/**
+ * bfs/dfs 개념 이해 필요
+ * */
 public class TravelRoute {
     // tickets : [["ICN", "JFK"], ["HND", "IAD"], ["JFK", "HND"]]
     // return : ["ICN", "JFK", "HND", "IAD"]
