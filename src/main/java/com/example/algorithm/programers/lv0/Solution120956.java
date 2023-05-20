@@ -8,7 +8,6 @@ import java.util.stream.Collectors;
 public class Solution120956 {
     // babbling : ["aya", "yee", "u", "maa", "wyeoo"]
     // result : 1
-
     static List<String> combinations = new ArrayList<>();
 
     public int solution(String[] babbling) {
