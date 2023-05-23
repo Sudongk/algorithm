@@ -1,10 +1,4 @@
 package com.example.algorithm.programers.lv0;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 public class Solution120876 {
     // lines : [[0, 1], [2, 5], [3, 9]]
     // result : 2
@@ -23,6 +17,8 @@ public class Solution120876 {
         for(int i = 0; i < 200; i++)
             if(arr[i] > 1)
                 answer++;
+
+
 
         return answer;
     }
