@@ -6,6 +6,7 @@ package com.example.algorithm.programers.permutation;
  * */
 public class RedundantPermutation {
     // 중복 허용을 위한 visited 제거
+  
     public static void redundantPermutation(int[] arr, int[] out, int depth, int r){
         if(depth == r){
             for(int num : out) System.out.print(num);
