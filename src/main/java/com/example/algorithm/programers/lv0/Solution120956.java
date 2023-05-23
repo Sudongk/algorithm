@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class Solution120956 {
     // babbling : ["aya", "yee", "u", "maa", "wyeoo"]
     // result : 1
-    static List<String> combinations = new ArrayList<>();
+    static List<String> permutations = new ArrayList<>();
 
     public int solution(String[] babbling) {
         int answer = 0;
@@ -23,10 +23,10 @@ public class Solution120956 {
             permutation(pronunciations, output, isVisit, 0, length, cnt);
         }
 
-        System.out.println(Arrays.toString(combinations.toArray()));
+        System.out.println(Arrays.toString(permutations.toArray()));
 
         for (int i = 0; i < babbling.length; i++) {
-            if (combinations.contains(babbling[i])) {
+            if (permutations.contains(babbling[i])) {
                 answer++;
             }
         }
@@ -37,7 +37,7 @@ public class Solution120956 {
     public static void permutation(String[] array, String[] output, boolean[] isVisit, int depth, int length, int count) {
         if(count == 0) {
             String str = Arrays.stream(output).filter(i -> i != null).collect(Collectors.joining());
-            combinations.add(str);
+            permutations.add(str);
 
             return;
         }
