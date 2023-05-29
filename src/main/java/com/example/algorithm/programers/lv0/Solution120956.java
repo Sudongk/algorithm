@@ -18,7 +18,7 @@ public class Solution120956 {
         String[] output = new String[length];
         boolean[] isVisit = new boolean[length];
 
-        // 가능힌 모든 조합
+        // 순서 상관있는 순열로 모든 경우의 수 출력
         for(int cnt = 1; cnt <= length; cnt++) {
             permutation(pronunciations, output, isVisit, 0, length, cnt);
         }

@@ -23,9 +23,9 @@ public class Permutation {
     }
 
     public static void main(String[] args){
-        int[] arr = {1, 2, 3};
+        int[] arr = {1, 2, 3, 4};
         // 2개 뽑기
-        int r = 2;
+        int r = 4;
         permutation(arr, new int[r], new boolean[arr.length], 0, r);
     }
 }
