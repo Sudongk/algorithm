@@ -7,8 +7,6 @@ import java.util.Queue;
 public class Solution181832 {
     // n : 4
     // result : [[1, 2, 3, 4], [12, 13, 14, 5], [11, 16, 15, 6], [10, 9, 8, 7]]
-    // 123 45 67 8 9
-    // 00 01 02 03 - 13 23 33 - 32 31 30 - 20 10 - 11 12 - 22 - 21
     public int[][] solution(int n) {
         int[][] answer = new int[n][n];
         boolean[][] visited = new boolean[n][n];
