@@ -21,6 +21,7 @@ public class Solution181893 {
             }
         }
 
+        // 배열 부분 복사
         answer = Arrays.copyOfRange(arr, start, end + 1);
 
         return answer;
