@@ -11,7 +11,7 @@ public class Solution181893 {
 
         int start = 0, end = 0;
 
-        // 실제 배열과 비교하며 인덱스 조정
+        // 실제 배열과 비교하며 인덱스 조정하여 범위값 구하기
         for (int i = 0; i < query.length; i++) {
             if (i % 2 != 0) {
                 start = start + query[i];
