@@ -12,6 +12,7 @@ public class Solution150370 {
         List<Integer> answer = new ArrayList<>();
         int todayNum = Integer.parseInt(today.replace(".",  ""));
 
+        // 약관 종류를 키, 기간을 값
         Map<String, Integer> termMap = new HashMap<>();
 
         for (String term : terms) {
@@ -46,6 +47,7 @@ public class Solution150370 {
         int nm = m + t;
         int nd = d;
 
+        // 달이 12보다 크면 해가 넘어가므로 년도 증가 시키기
         if (nm > 12) {
             while (nm > 12) {
                 ny++;
@@ -53,6 +55,7 @@ public class Solution150370 {
             }
         }
 
+        // 일이 1보다 작으면 일을 28일로 초기화시킨후 달도 1 감소
         if (nd == 0) {
             nd = 28;
             nm--;
@@ -62,6 +65,7 @@ public class Solution150370 {
         String strM = String.valueOf(nm);
         String strD = String.valueOf(nd);
 
+        // 달과 일이 한자리면 앞에 0 붙이기
         if (strM.length() == 1) {
             strM = "0" + strM;
         }
@@ -70,7 +74,6 @@ public class Solution150370 {
             strD = "0" + strD;
         }
 
-        System.out.println(strY + strM + strD);
         return strY + strM + strD;
     }
 
