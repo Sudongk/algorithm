@@ -5,18 +5,24 @@ public class Solution181187 {
     // r2 : 3
     // result : 20
     public long solution(int r1, int r2) {
-        long result = 0;
-        for(int x = 1; x < r2; x++) {
-            double inner = Math.sqrt(Math.pow(r1, 2) - Math.pow(x, 2)); //inner는 r1 원의 방정식에서 찾은 y값
-            double outer = Math.sqrt(Math.pow(r2, 2) - Math.pow(x, 2)); //outer는 r2 원의 방정식에서 찾은 y값
-            long cnt = (long) outer - (long) inner;
-            if(isInteger(inner)) cnt++;
-            result += cnt * 4;
+        long answer = 0;
+
+        for (int i = 0; i <= r2; i++) {
+            for (int j = 0; j <= r2; j++) {
+                double d = Math.sqrt(Math.pow(i, 2) + Math.pow(j, 2));
+                if (d <= (double) r2) {
+                    if (d >= (double) r1) {
+                        if (i == 0 || j == 0) {
+                            answer = answer + 2;
+                        } else {
+                            answer = answer + 4;
+                        }
+                    }
+                }
+            }
         }
-        return result + (r2 - r1) * 4;
-    }
-    private boolean isInteger(double val) {
-        return val == (long) val;
+
+        return answer;
     }
 
     public static void main(String[] args) {
