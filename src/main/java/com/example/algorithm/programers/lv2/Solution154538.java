@@ -1,29 +1,39 @@
 package com.example.algorithm.programers.lv2;
 
+import java.util.HashSet;
+
 public class Solution154538 {
     // x : 10
     // y : 40
-    // n : 5
-    // result : 2
+    // n : 30
+    // result : 1
     public int solution(int x, int y, int n) {
         int cnt = 0;
-        while (y > x) {
-            if (y % 2 == 0 && y / 2 >= x) {
-                y /= 2;
-            } else if (y % 3 == 0 && y / 3 >= x && (y / 3) % n != n - 1) {
-                y /= 3;
-            } else {
-                y -= n;
+        HashSet<Integer> curr = new HashSet<>(), next = null;
+        curr.add(x);
+
+        while (!curr.isEmpty()) {
+            if (curr.contains(y))
+                return cnt;
+            next = new HashSet<>();
+            for (int val : curr) {
+                int pVal = val + n;
+                int dVal = val * 2;
+                int tVal = val * 3;
+                if (pVal <= y) next.add(pVal);
+                if (dVal <= y) next.add(dVal);
+                if (tVal <= y) next.add(tVal);
             }
+            curr = next;
             cnt++;
         }
-        return x == y ? cnt : -1;
+        return -1;
     }
 
     public static void main(String[] args) {
         int x = 10;
         int y = 40;
-        int n = 5;
+        int n = 30;
 
         Solution154538 solution154538 = new Solution154538();
         System.out.println(solution154538.solution(x, y, n));
