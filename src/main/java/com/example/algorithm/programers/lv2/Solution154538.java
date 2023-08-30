@@ -8,7 +8,6 @@ public class Solution154538 {
     // n : 30
     // result : 1
     public int solution(int x, int y, int n) {
-
         int cnt = 0;
         HashSet<Integer> curr = new HashSet<>(), next = null;
         curr.add(x);
