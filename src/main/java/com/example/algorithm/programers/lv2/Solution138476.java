@@ -26,20 +26,22 @@ public class Solution138476 {
         // value 값으로 내림차순 정렬
         values.sort(Collections.reverseOrder());
 
+        // 크기 다른 귤 카운트
         int count = 0;
 
         for (Integer value : values) {
+            // 처음부터 해당 귤의 수가 목표 갯수라면 바로 1증가 후 리턴
             if (count == 0 && value == k) {
                 answer++;
                 break;
             }
-
+            // count가 목표 갯수보단 작으면 count, answer 증가
             if (count < k) {
                 count += value;
                 answer++;
             }
-
-            if (count == k && value > k) {
+            // count가 목표 갯수와 같거나 크면 빠져나온다
+            if (count == k || count > k) {
                 break;
             }
         }
