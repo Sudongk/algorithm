@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.lv0;
+package com.example.algorithm.programmers.lv0;
 public class Solution120876 {
     // lines : [[0, 1], [2, 5], [3, 9]]
     // result : 2

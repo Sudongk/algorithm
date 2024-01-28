@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.lv2;
+package com.example.algorithm.programmers.lv2;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package com.example.algorithm.programers;
+package com.example.algorithm.programmers;
 
 public class Solution178870 {
     // sequence : [1, 2, 3, 4, 5]

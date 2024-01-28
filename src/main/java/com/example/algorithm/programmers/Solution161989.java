@@ -1,4 +1,4 @@
-package com.example.algorithm.programers;
+package com.example.algorithm.programmers;
 
 import java.util.*;
 

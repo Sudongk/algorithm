@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.permutation;
+package com.example.algorithm.programmers.permutation;
 
 /**
  * Permutation(순열): 서로 다른 n개에서 r개를 순서에 상관있게 뽑는 경우의 수

@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.lv1;
+package com.example.algorithm.programmers.lv1;
 
 public class Solution12935 {
     // arr : [4,3,2,1]

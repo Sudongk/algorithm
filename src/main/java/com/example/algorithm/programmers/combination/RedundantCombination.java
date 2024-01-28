@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.combination;
+package com.example.algorithm.programmers.combination;
 
 /**
  * Combination(조합) : 서로 다른 n개에서 순서 상관있이 r개를 뽑는 경우의 수

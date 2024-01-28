@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.permutation;
+package com.example.algorithm.programmers.permutation;
 
 /**
  * Redundant Permutation(중복 순열): 서로 다른 n개에서 중복이 가능하게 r개를 뽑아서 정렬하는 경우의 수

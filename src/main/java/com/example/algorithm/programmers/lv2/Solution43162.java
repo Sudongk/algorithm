@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.lv2;
+package com.example.algorithm.programmers.lv2;
 
 public class Solution43162 {
     // n : 3

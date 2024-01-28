@@ -1,4 +1,4 @@
-package com.example.algorithm.programers;
+package com.example.algorithm.programmers;
 
 public class Solution159994 {
     // cards1 : ["i", "drink", "water"]

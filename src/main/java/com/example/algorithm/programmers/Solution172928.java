@@ -1,4 +1,4 @@
-package com.example.algorithm.programers;
+package com.example.algorithm.programmers;
 
 public class Solution172928 {
     // park : ["SOO","OOO","OOO"]

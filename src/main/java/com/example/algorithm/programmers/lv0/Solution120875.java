@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.lv0;
+package com.example.algorithm.programmers.lv0;
 
 public class Solution120875 {
     // dots : [[1, 4], [9, 2], [3, 8], [11, 6]]

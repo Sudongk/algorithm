@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.lv0;
+package com.example.algorithm.programmers.lv0;
 
 public class Solution120866 {
     // board : [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 0, 0]]

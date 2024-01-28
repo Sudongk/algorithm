@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.lv1;
+package com.example.algorithm.programmers.lv1;
 
 import java.util.Stack;
 

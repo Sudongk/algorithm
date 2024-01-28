@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.lv4;
+package com.example.algorithm.programmers.lv4;
 
 import java.util.ArrayList;
 import java.util.List;

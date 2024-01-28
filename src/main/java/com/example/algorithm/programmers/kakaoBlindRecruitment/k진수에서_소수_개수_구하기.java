@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.kakaoBlindRecruitment;
+package com.example.algorithm.programmers.kakaoBlindRecruitment;
 
 
 //  문제의 핵심: 소수판별에서의 효율적인 알고리즘 구현(시간복잡도)

@@ -1,4 +1,4 @@
-package com.example.algorithm.programers.lv1;
+package com.example.algorithm.programmers.lv1;
 
 public class Solution87389 {
     // n : 10

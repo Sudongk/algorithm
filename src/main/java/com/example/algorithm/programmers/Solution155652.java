@@ -1,7 +1,4 @@
-package com.example.algorithm.programers;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.example.algorithm.programmers;
 
 public class Solution155652 {
     // s : "aukks"

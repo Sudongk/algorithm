@@ -1,7 +1,6 @@
-package com.example.algorithm.programers;
+package com.example.algorithm.programmers;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /*
 * UnsupportedOperationException 에러는 보통 List 형을 new로 초기화하지 않는 상태에서 Arrays.asList로 생성하였을 시 주로 발생한다.
