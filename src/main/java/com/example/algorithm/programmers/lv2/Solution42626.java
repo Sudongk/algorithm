@@ -10,7 +10,9 @@ public class Solution42626 {
 
     public int solution(int[] scoville, int K) {
         // 자바의 최소 힙 (부모 노드가 자식 노드보다 작거나 같은 완전 이진 트리)
+        // poll()하면 가장 작은 값 반환
         PriorityQueue<Integer> pq = new PriorityQueue<>();
+
 
         // 최소 힙을 유지하면서 모든 음식의 스코빌 지수를 큐에 삽입
         for (int s : scoville)
