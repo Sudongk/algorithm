@@ -10,11 +10,11 @@ public class Solution42627 {
     public int solution(int[][] jobs) {
         int answer = 0;
 
-        // 작업의 소요시간을 기준으로 오름차순 정렬
-        PriorityQueue<int[]> pq = new PriorityQueue<>((o1, o2) -> o1[1] - o2[1]);
-
         int time = 0;
         int index = 0;
+
+        // 작업의 소요시간을 기준으로 오름차순 정렬
+        PriorityQueue<int[]> pq = new PriorityQueue<>((o1, o2) -> o1[1] - o2[1]);
 
         // 작업의 요청 시간을 기준으로 오름차순 정렬
         while (index < jobs.length || !pq.isEmpty()) {
