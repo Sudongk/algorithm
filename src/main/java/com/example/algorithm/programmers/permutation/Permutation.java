@@ -5,15 +5,15 @@ package com.example.algorithm.programmers.permutation;
  * ex) [1, 2] , [2, 1] 는 서로 다름
  * */
 public class Permutation {
-    public static void permutation(int[] arr, int[] out, boolean[] visited, int depth, int r){
-        if(depth == r){ // 뽑으려는 갯수 r과 depth가 같으면 출력
-            for(int num : out) System.out.print(num + " ");
+    public static void permutation(int[] arr, int[] out, boolean[] visited, int depth, int r) {
+        if (depth == r) { // 뽑으려는 갯수 r과 depth가 같으면 출력
+            for (int num : out) System.out.print(num + " ");
             System.out.println();
             return; // 재귀함수 탈출?
         }
 
-        for(int i = 0; i < arr.length; i++){
-            if(!visited[i]){
+        for (int i = 0; i < arr.length; i++) {
+            if (!visited[i]) {
                 visited[i] = true;
                 out[depth] = arr[i];
                 permutation(arr, out, visited, depth + 1, r);
@@ -22,10 +22,10 @@ public class Permutation {
         }
     }
 
-    public static void main(String[] args){
-        int[] arr = {1, 2, 3, 4};
-        // 2개 뽑기
-        int r = 4;
+    public static void main(String[] args) {
+        int[] arr = {6, 0, 2};
+        // 3개 뽑기
+        int r = 3;
         permutation(arr, new int[r], new boolean[arr.length], 0, r);
     }
 }
