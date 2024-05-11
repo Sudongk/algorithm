@@ -23,7 +23,7 @@ public class Permutation {
     }
 
     public static void main(String[] args) {
-        int[] arr = {6, 0, 2};
+        int[] arr = {6, 0, 4};
         // 3개 뽑기
         int r = 3;
         permutation(arr, new int[r], new boolean[arr.length], 0, r);
