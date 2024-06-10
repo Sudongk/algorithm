@@ -6,7 +6,7 @@ public class AsyncExample2 {
 
         new Thread(() -> {
             try {
-                Thread.sleep(500);
+                Thread.sleep(510);
                 System.out.println(Thread.currentThread().getName());
             } catch (InterruptedException e) {
                 e.printStackTrace();
